@@ -6,7 +6,11 @@ Répartition suivie : CR du 24/11/2026 (`../2026-11-24_CR_Preparation_Atelier_IA
 
 ## Ouvrir
 
-Double-cliquer sur `index.html` (ou le servir en local). Pas de mise en ligne à ce jour.
+Double-cliquer sur `index.html` (ou le servir en local).
+
+**En ligne depuis le 25/11/2026 (accord de Julien) :** https://practice-imtbs.github.io/presentation-tangente-ia-souveraine/ (dépôt public https://github.com/practice-imtbs/presentation-tangente-ia-souveraine, GitHub Pages sur `main`, racine ; le grand QR code de la dernière slide pointe vers cette adresse). Les vidéos ne partent pas sur GitHub (exclues par `.gitignore`) : en ligne, seules celles qui ont un permalien Médiaserveur se lisent ; les cinq vidéos à enregistrer n'y apparaîtront qu'une fois déposées sur le Médiaserveur et leur `permalien` renseigné. Attention : les notes de l'orateur sont dans le code de la page, donc lisibles en ligne.
+
+Mise à jour : `git add -A && git commit -m "…"`, puis `gh auth switch -u practice-imtbs && git push && gh auth switch -u julienmorice`. GitHub Pages republie en une minute environ.
 
 | Touche | Action |
 |---|---|
