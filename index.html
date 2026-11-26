@@ -617,7 +617,35 @@ Placé ici pour faire le pont : ce n'est plus de l'inférence distante, c'est d�
 Vidéo de secours (44 s, Médiaserveur v126d69398faa57otway) : ouverture du Transcripteur, choix du modèle, un enregistrement de réunion de 15 min 42 transcrit en 1 min 54 avec Whisper turbo, puis export .txt et .srt. Elle montre une vraie réunion avec la scolarité (prénoms de collègues, quelques secondes de son) : publiée ainsi à la demande de Julien.</aside>
 </section>
 
-<!-- 16 · Lequel pour qui -->
+<!-- 16 · Transcripteur, sous le capot -->
+<section class="slide" data-t="Le Transcripteur, sous le capot" data-seq="Niveau 3 · Logiciel chez moi, calcul à distance" data-debut="15:00" data-fin="15:15" data-m="3">
+  <div class="kicker">Niveau 3 · avant-goût du niveau 4 · sous le capot</div>
+  <h2>Comment je l'ai <em>installé</em></h2>
+  <div class="flow sm" style="margin-top:30px">
+    <div class="box"><div class="k">Interface</div><b>Le navigateur</b><span>Une page aux couleurs de l'école, sur 127.0.0.1</span></div>
+    <div class="arr">→</div>
+    <div class="box"><div class="k">Application</div><b>Python sur le Mac</b><span>Un petit serveur local (FastAPI), rien sur Internet</span></div>
+    <div class="arr">→</div>
+    <div class="box v"><div class="k">Modèle ouvert</div><b>Whisper</b><span>Calcul sur la puce Apple (MLX)</span></div>
+    <div class="arr">→</div>
+    <div class="box"><div class="k">Résultat</div><b>.txt et .srt</b><span>Rangés dans un dossier du Mac</span></div>
+  </div>
+  <div class="dl" style="grid-template-columns:1fr 400px;gap:48px;margin-top:30px">
+    <ol class="pas">
+      <li><span class="t">1</span><div><b>J'ai décrit l'application à Claude</b><span>En français : déposer un fichier, choisir le modèle, récupérer le texte. Claude a écrit le code Python et la page.</span></div></li>
+      <li><span class="t">2</span><div><b>Un script d'installation</b><span>Il installe Python et les bibliothèques (dont <code>mlx-whisper</code>) avec <code>uv</code>, sans droit d'administrateur.</span></div></li>
+      <li><span class="t">3</span><div><b>Whisper se télécharge une seule fois</b><span>Au premier usage, depuis Hugging Face : 1,6 Go pour la version turbo. Il reste ensuite sur le Mac.</span></div></li>
+      <li><span class="t">4</span><div><b>Une icône dans Applications</b><span>Un clic lance le serveur et ouvre la page ; il s'arrête seul après une heure sans activité.</span></div></li>
+    </ol>
+    <div class="card top-v"><div class="tag">Ce qu'il faut</div><p>Un Mac à puce Apple (M1 à M4), <b>2 à 3 Go</b> pour l'application, plus les modèles. Une version Windows existe aussi.</p></div>
+  </div>
+  <div class="foot"><span>26 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>Tangente 2026 · IA souveraine et IA locale</span></div>
+  <aside class="notes">1 min, facultative si on manque de temps. Source : ApplicationsPerso/Transcripteur/README.md (application créée le 11/10/2026).
+Le point à faire passer : pas besoin d'un logiciel du commerce. Un modèle ouvert (Whisper, publié par OpenAI) plus une petite application écrite avec l'IA suffisent ; le calcul et les fichiers restent sur le poste.
+Détails si on me les demande : back-end Python FastAPI (serveur.py), interface HTML (static/index.html), trois moteurs (moteurs.py) : Whisper large-v3 turbo et large-v3 par MLX sur Mac, faster-whisper sous Windows, CrisperWhisper (verbatim, licence non commerciale) par PyTorch. Modèles rangés dans ~/.cache/huggingface. Installation : installer_mac.command (uv, Python 3.11, bibliothèques), puis creer_app_mac.sh pour l'icône. Aussi une commande « transcrire » dans le Terminal.</aside>
+</section>
+
+<!-- 17 · Lequel pour qui -->
 <section class="slide" data-t="Niveau 3 · lequel, pour qui ?" data-seq="Niveau 3 · Logiciel chez moi, calcul à distance" data-debut="15:00" data-fin="15:15" data-m="3">
   <div class="kicker">Niveau 3 · en résumé</div>
   <h2>Lequel, <em>pour qui ?</em></h2>
@@ -636,7 +664,7 @@ AnythingLLM est cité, pas montré (prévu au CR du 24/11 avec Kiro : à montrer
 Transition vers Baptiste : « Et si on veut que l'IA agisse sur ses fichiers, pour coder ? »</aside>
 </section>
 
-<!-- 17 · Relais Baptiste : OpenCode, Vibe -->
+<!-- 18 · Relais Baptiste : OpenCode, Vibe -->
 <section class="slide s-relay" data-t="À toi, Baptiste · OpenCode et Mistral Vibe" data-seq="Relais · Baptiste" data-debut="15:15" data-fin="15:20" data-m="0">
   <div class="kicker">Relais · 15 h 15</div>
   <h2>À toi, <em>Baptiste</em></h2>
@@ -650,7 +678,7 @@ Retour vers 15 h 20.</aside>
 
 <!-- ===================== NIVEAU 4 · TOUT LOCAL ===================== -->
 
-<!-- 18 · Intercalaire niveau 4 -->
+<!-- 19 · Intercalaire niveau 4 -->
 <section class="slide s-inter" data-t="Niveau 4 · Tout local" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
   <div class="kicker">Julien · 5 minutes</div>
   <div class="lvlnum">Niveau 4 · boss final</div>
@@ -662,7 +690,7 @@ Retour vers 15 h 20.</aside>
 Dire franchement : je n'en ai pas d'usage régulier ; je le montre pour ce que cela annonce. Ce niveau intéresse surtout les plus techniques.</aside>
 </section>
 
-<!-- 19 · LM Studio -->
+<!-- 20 · LM Studio -->
 <section class="slide" data-t="LM Studio, un modèle sur le Mac" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
   <div class="kicker">Niveau 4 · LM Studio <span class="live">Démo en direct</span></div>
   <h2>Un modèle, <em>sur mon Mac</em></h2>
@@ -684,7 +712,7 @@ Geste fort : couper le wifi à l'écran, puis poser la question. Le rallumer aus
 Vidéo à enregistrer : assets/videos/LM_Studio.mp4.</aside>
 </section>
 
-<!-- 20 · Kiro + LM Studio -->
+<!-- 21 · Kiro + LM Studio -->
 <section class="slide" data-t="Le même Kiro, branché sur mon Mac" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
   <div class="kicker">Niveau 4 · le même logiciel, un autre moteur <span class="live">Démo en direct</span></div>
   <h2>Le même Kiro, <em>branché sur mon Mac</em></h2>
@@ -707,7 +735,7 @@ Le message de tout l'atelier tient dans cette slide : le harnais (Kiro, mes prom
 À tester avant : non vérifié à ce jour avec la version ILaaS de Kiro. Vidéo à enregistrer : assets/videos/Kiro_LM_Studio.mp4.</aside>
 </section>
 
-<!-- 21 · Relais Baptiste : agent vocal -->
+<!-- 22 · Relais Baptiste : agent vocal -->
 <section class="slide s-relay" data-t="À toi, Baptiste · agent vocal local" data-seq="Relais · Baptiste" data-debut="15:25" data-fin="15:30" data-m="0">
   <div class="kicker">Relais · 15 h 25</div>
   <h2>À toi, <em>Baptiste</em></h2>
@@ -721,7 +749,7 @@ Puis pratique guidée (15 h 30 - 15 h 55) : contenu non tranché au 24/11. Ma pr
 
 <!-- ===================== PRATIQUE ET CLÔTURE ===================== -->
 
-<!-- 22 · Pratique -->
+<!-- 23 · Pratique -->
 <section class="slide" data-t="Pratique · à vous de jouer" data-seq="Pratique guidée" data-debut="15:30" data-fin="15:55" data-m="0">
   <div class="kicker">Pratique guidée · 10 minutes</div>
   <h2>À vous : <em>votre première clé</em></h2>
@@ -737,7 +765,7 @@ Vérifier avant avec Lucie JACQUET-MALO que le circuit des clés présenté ne c
 Kiro : ne pas promettre qu'une clé ILaaS individuelle marche dedans (CORS). Pour les plus à l'aise, AnythingLLM accepte une clé individuelle.</aside>
 </section>
 
-<!-- 23 · Ce que je retiens -->
+<!-- 24 · Ce que je retiens -->
 <section class="slide" data-t="Trois idées à emporter" data-seq="Clôture" data-debut="15:55" data-fin="16:00" data-m="0">
   <div class="kicker">Clôture</div>
   <h2>Trois idées <em>à emporter</em></h2>
@@ -751,7 +779,7 @@ Kiro : ne pas promettre qu'une clé ILaaS individuelle marche dedans (CORS). Pou
 Annonce possible (à valider avec Baptiste et Lucie) : une suite en quatre webinaires, un par niveau, de janvier à avril 2027.</aside>
 </section>
 
-<!-- 24 · Merci -->
+<!-- 25 · Merci -->
 <section class="slide s-end" data-t="Merci · contact" data-seq="Clôture" data-debut="15:55" data-fin="16:00" data-m="0">
   <div>
     <div class="kicker">Merci</div>
