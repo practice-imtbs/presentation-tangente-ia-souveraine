@@ -235,6 +235,17 @@ window.VIDEOS = {
   .pas span{display:block;font-size:16.5px;line-height:1.35;color:var(--texte-2);margin-top:2px}
   .pas code,.vside code{font:15.5px "SF Mono",Menlo,monospace;color:#fff;background:var(--fond-3);padding:1px 6px}
 
+  /* téléchargement de Kiro */
+  .dl{display:grid;grid-template-columns:1fr 360px;gap:60px;margin-top:34px;align-items:start}
+  .dl .pas{gap:20px}
+  .dl .pas li{grid-template-columns:48px 1fr}
+  .dl .pas .t{font-size:30px;line-height:1}
+  .dl .pas b{font-size:25px}
+  .dl .pas span{font-size:19px}
+  .dl .qr-li img{width:300px;height:300px;margin:0 auto}
+  .dl .short{font:bold 27px "SF Mono",Menlo,monospace;color:var(--blanc);margin-top:16px;text-align:center}
+  .dl .meta2{font-size:16px;color:var(--texte-3);text-align:center;margin-top:8px}
+
   /* tableau comparatif */
   table.cmp{width:100%;border-collapse:collapse;margin-top:38px;font-size:22px}
   table.cmp th{font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--texte-3);text-align:left;padding:0 18px 14px;font-weight:bold}
@@ -517,7 +528,7 @@ La clé, c'est la carte d'accès au restaurant : avec elle, on choisit librement
       <div class="links"></div>
     </div>
   </div>
-  <div class="todo"><p>Lien de téléchargement de l'archive <code style="font:16px Menlo,monospace">Kiro_v4.0_ILaaS.zip</code> à remettre aux participant·es (partage.imt.fr ?). Kiro est écrit par Renaud Dékode : son accord pour diffuser la v4 modifiée est à confirmer.</p></div>
+  <div class="callout sm">Pour le récupérer : <b>shorturl.at/rNscz</b>, détail à la slide suivante.</div>
   <div class="foot"><span>26 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>Tangente 2026 · IA souveraine et IA locale</span></div>
   <aside class="notes">3 min. Kiro ouvert à l'avance (Kiro/Kiro4/Kiro_v4.0_ILaaS/index.html), clé déjà enregistrée. Montrer : le sélecteur de modèles (ILaaS et Albert), une question, la réponse.
 À dire franchement : une clé ILaaS individuelle ne marche pas directement dans Kiro, car ILaaS refuse les appels qui viennent d'un navigateur (CORS). Il faut passer par un relais (le proxy LiteLLM de PracTice pour IMT-BS ; un relais par école ailleurs). Baptiste a exploré un petit script local, moins simple.
@@ -525,7 +536,32 @@ La clé, c'est la carte d'accès au restaurant : avec elle, on choisit librement
 Vidéo à enregistrer : la déposer sous assets/videos/Kiro_ILaaS.mp4, la slide la lira toute seule.</aside>
 </section>
 
-<!-- 13 · Open WebUI d'IMT-BS -->
+<!-- 13 · Télécharger Kiro -->
+<section class="slide" data-t="Télécharger Kiro" data-seq="Niveau 3 · Logiciel chez moi, calcul à distance" data-debut="15:00" data-fin="15:15" data-m="3">
+  <div class="kicker">Niveau 3 · à emporter</div>
+  <h2>Télécharger <em>Kiro</em></h2>
+  <div class="dl">
+    <ol class="pas">
+      <li><span class="t">1</span><div><b>Télécharger l'archive</b><span><code>Kiro_v4.0_ILaaS.zip</code>, 1,5 Mo, par FileSender (RENATER).</span></div></li>
+      <li><span class="t">2</span><div><b>La décompresser</b><span>Dans Documents, par exemple, à un endroit fixe.</span></div></li>
+      <li><span class="t">3</span><div><b>Ouvrir <code>index.html</code></b><span>Kiro s'affiche dans le navigateur. Rien à installer, aucun droit d'administrateur.</span></div></li>
+      <li><span class="t">4</span><div><b>Configuration, puis coller sa clé</b><span>Onglet « ILaaS et Albert » : six modèles hébergés en France. Le fichier <code>LISEZ-MOI.txt</code> détaille tout.</span></div></li>
+    </ol>
+    <figure class="qr-li">
+      <a href="https://filesender.renater.fr/?s=download&amp;token=eca63dca-9a9b-48d1-b18c-6b4cb0e65e8e" target="_blank" rel="noopener"><img src="assets/img/qr_kiro.png" alt="QR code vers le téléchargement de Kiro sur FileSender"></a>
+      <div class="short"><a class="ext" href="https://shorturl.at/rNscz" target="_blank" rel="noopener">shorturl.at/rNscz</a></div>
+      <div class="meta2">Lien valable jusqu'au 11 décembre 2026</div>
+    </figure>
+  </div>
+  <div class="callout sm">Kiro est un logiciel de <b>Renaud Dékode</b> (renaud-dekode.fr), adapté par PracTice pour ILaaS et Albert. Les modèles ILaaS et Albert passent par un <b>relais</b> : la clé individuelle d'ilaas.fr ne suffit pas.</div>
+  <div class="foot"><span>26 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>Tangente 2026 · IA souveraine et IA locale</span></div>
+  <aside class="notes">1 min. Coller le lien court dans la discussion de la visio : shorturl.at/rNscz (il mène à FileSender, le QR code pointe directement vers FileSender).
+Lien FileSender déposé le 26/11/2026, expire le 11/12/2026 : au-delà, redéposer l'archive et changer le QR code (assets/img/qr_kiro.png) et le lien court.
+Dire franchement : l'onglet « ILaaS et Albert » passe par le proxy LiteLLM de PracTice, qui accepte les appels d'un navigateur. Une clé individuelle obtenue sur ilaas.fr ne marche pas directement (CORS). Pour les autres écoles : demander un relais à sa DSI, ou utiliser Kiro avec un autre fournisseur.
+Ne pas redistribuer l'archive en dehors de l'atelier ; pour faire connaître Kiro, renvoyer vers la page de son auteur.</aside>
+</section>
+
+<!-- 14 · Open WebUI d'IMT-BS -->
 <section class="slide" data-t="Open WebUI, l'instance d'IMT-BS" data-seq="Niveau 3 · Logiciel chez moi, calcul à distance" data-debut="15:00" data-fin="15:15" data-m="3">
   <div class="kicker">Niveau 3 · une instance d'école <span class="live">Démo en direct</span></div>
   <h2>Une interface d'école : <em>chat.imt-bs.eu</em></h2>
@@ -548,7 +584,7 @@ Dire dès le début que l'accès est réservé aux personnels d'IMT-BS et de TSP
 Vidéo à enregistrer : assets/videos/Open_WebUI_IMTBS.mp4.</aside>
 </section>
 
-<!-- 14 · RAGaRenn -->
+<!-- 15 · RAGaRenn -->
 <section class="slide" data-t="RAGaRenn, sans attendre son école" data-seq="Niveau 3 · Logiciel chez moi, calcul à distance" data-debut="15:00" data-fin="15:15" data-m="3">
   <div class="kicker">Niveau 3 · sans attendre son école</div>
   <h2>Votre école n'a pas d'instance ? <em>RAGaRenn</em></h2>
@@ -574,7 +610,7 @@ Vidéo à enregistrer : assets/videos/Open_WebUI_IMTBS.mp4.</aside>
 À vérifier avant : qui peut se connecter (comptes de l'ESR par la fédération d'identité ? tous les établissements ?) et quels modèles sont proposés. Le CR du 24/11 dit « déjà ouvert à tous » : le confirmer à l'écran avant de l'affirmer.</aside>
 </section>
 
-<!-- 15 · Transcripteur (Whisper) -->
+<!-- 16 · Transcripteur (Whisper) -->
 <section class="slide" data-t="Whisper, la transcription sur mon Mac" data-seq="Niveau 3 · Logiciel chez moi, calcul à distance" data-debut="15:00" data-fin="15:15" data-m="3">
   <div class="kicker">Niveau 3 · avant-goût du niveau 4</div>
   <h2>La transcription, <em>sur mon Mac</em></h2>
@@ -597,7 +633,7 @@ Placé ici pour faire le pont : ce n'est plus de l'inférence distante, c'est d�
 À retester avant (prévu par Julien). Vidéo à enregistrer : assets/videos/Transcripteur_Whisper.mp4, avec un enregistrement sans données personnelles.</aside>
 </section>
 
-<!-- 16 · Lequel pour qui -->
+<!-- 17 · Lequel pour qui -->
 <section class="slide" data-t="Niveau 3 · lequel, pour qui ?" data-seq="Niveau 3 · Logiciel chez moi, calcul à distance" data-debut="15:00" data-fin="15:15" data-m="3">
   <div class="kicker">Niveau 3 · en résumé</div>
   <h2>Lequel, <em>pour qui ?</em></h2>
@@ -616,7 +652,7 @@ AnythingLLM est cité, pas montré (prévu au CR du 24/11 avec Kiro : à montrer
 Transition vers Baptiste : « Et si on veut que l'IA agisse sur ses fichiers, pour coder ? »</aside>
 </section>
 
-<!-- 17 · Relais Baptiste : OpenCode, Vibe -->
+<!-- 18 · Relais Baptiste : OpenCode, Vibe -->
 <section class="slide s-relay" data-t="À toi, Baptiste · OpenCode et Mistral Vibe" data-seq="Relais · Baptiste" data-debut="15:15" data-fin="15:20" data-m="0">
   <div class="kicker">Relais · 15 h 15</div>
   <h2>À toi, <em>Baptiste</em></h2>
@@ -630,7 +666,7 @@ Retour vers 15 h 20.</aside>
 
 <!-- ===================== NIVEAU 4 · TOUT LOCAL ===================== -->
 
-<!-- 18 · Intercalaire niveau 4 -->
+<!-- 19 · Intercalaire niveau 4 -->
 <section class="slide s-inter" data-t="Niveau 4 · Tout local" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
   <div class="kicker">Julien · 5 minutes</div>
   <div class="lvlnum">Niveau 4 · boss final</div>
@@ -642,7 +678,7 @@ Retour vers 15 h 20.</aside>
 Dire franchement : je n'en ai pas d'usage régulier ; je le montre pour ce que cela annonce. Ce niveau intéresse surtout les plus techniques.</aside>
 </section>
 
-<!-- 19 · LM Studio -->
+<!-- 20 · LM Studio -->
 <section class="slide" data-t="LM Studio, un modèle sur le Mac" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
   <div class="kicker">Niveau 4 · LM Studio <span class="live">Démo en direct</span></div>
   <h2>Un modèle, <em>sur mon Mac</em></h2>
@@ -664,7 +700,7 @@ Geste fort : couper le wifi à l'écran, puis poser la question. Le rallumer aus
 Vidéo à enregistrer : assets/videos/LM_Studio.mp4.</aside>
 </section>
 
-<!-- 20 · Kiro + LM Studio -->
+<!-- 21 · Kiro + LM Studio -->
 <section class="slide" data-t="Le même Kiro, branché sur mon Mac" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
   <div class="kicker">Niveau 4 · le même logiciel, un autre moteur <span class="live">Démo en direct</span></div>
   <h2>Le même Kiro, <em>branché sur mon Mac</em></h2>
@@ -687,7 +723,7 @@ Le message de tout l'atelier tient dans cette slide : le harnais (Kiro, mes prom
 À tester avant : non vérifié à ce jour avec la version ILaaS de Kiro. Vidéo à enregistrer : assets/videos/Kiro_LM_Studio.mp4.</aside>
 </section>
 
-<!-- 21 · Relais Baptiste : agent vocal -->
+<!-- 22 · Relais Baptiste : agent vocal -->
 <section class="slide s-relay" data-t="À toi, Baptiste · agent vocal local" data-seq="Relais · Baptiste" data-debut="15:25" data-fin="15:30" data-m="0">
   <div class="kicker">Relais · 15 h 25</div>
   <h2>À toi, <em>Baptiste</em></h2>
@@ -701,7 +737,7 @@ Puis pratique guidée (15 h 30 - 15 h 55) : contenu non tranché au 24/11. Ma pr
 
 <!-- ===================== PRATIQUE ET CLÔTURE ===================== -->
 
-<!-- 22 · Pratique -->
+<!-- 23 · Pratique -->
 <section class="slide" data-t="Pratique · à vous de jouer" data-seq="Pratique guidée" data-debut="15:30" data-fin="15:55" data-m="0">
   <div class="kicker">Pratique guidée · 10 minutes</div>
   <h2>À vous : <em>votre première clé</em></h2>
@@ -717,7 +753,7 @@ Vérifier avant avec Lucie JACQUET-MALO que le circuit des clés présenté ne c
 Kiro : ne pas promettre qu'une clé ILaaS individuelle marche dedans (CORS). Pour les plus à l'aise, AnythingLLM accepte une clé individuelle.</aside>
 </section>
 
-<!-- 23 · Ce que je retiens -->
+<!-- 24 · Ce que je retiens -->
 <section class="slide" data-t="Trois idées à emporter" data-seq="Clôture" data-debut="15:55" data-fin="16:00" data-m="0">
   <div class="kicker">Clôture</div>
   <h2>Trois idées <em>à emporter</em></h2>
@@ -731,7 +767,7 @@ Kiro : ne pas promettre qu'une clé ILaaS individuelle marche dedans (CORS). Pou
 Annonce possible (à valider avec Baptiste et Lucie) : une suite en quatre webinaires, un par niveau, de janvier à avril 2027.</aside>
 </section>
 
-<!-- 24 · Merci -->
+<!-- 25 · Merci -->
 <section class="slide s-end" data-t="Merci · contact" data-seq="Clôture" data-debut="15:55" data-fin="16:00" data-m="0">
   <div>
     <div class="kicker">Merci</div>
