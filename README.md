@@ -35,6 +35,10 @@ Mise à jour : `git add -A && git commit -m "…"`, puis `gh auth switch -u prac
 
 Whisper (Transcripteur) est placé à la fin du niveau 3, comme demandé, mais présenté comme un « avant-goût du niveau 4 » : le calcul reste sur le poste.
 
+## Liens courts
+
+Créés le 26/11/2026 sur is.gd, affichés sur les slides 11 et 23 et à coller dans la discussion : https://is.gd/cleilaas (demande de clé ILaaS individuelle) et https://is.gd/clealbert (console des clés Albert API). Kiro : https://shorturl.at/rNscz (slide 13).
+
 ## Vidéos
 
 La slide « Claude prépare, ChatGPT dessine » (vidéo `articuler`) a été retirée le 26/11/2026 à la demande de Julien ; la copie locale reste dans `assets/videos/`.

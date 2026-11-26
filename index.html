@@ -235,6 +235,7 @@ window.VIDEOS = {
   .pas span{display:block;font-size:16.5px;line-height:1.35;color:var(--texte-2);margin-top:2px}
   .pas code,.vside code{font:15.5px "SF Mono",Menlo,monospace;color:#fff;background:var(--fond-3);padding:1px 6px}
 
+  .sl{display:inline-block;margin-left:16px;font:bold 19px "SF Mono",Menlo,monospace;color:var(--blanc);background:var(--fond-3);padding:3px 10px;vertical-align:middle;white-space:nowrap}
   /* téléchargement de Kiro */
   .dl{display:grid;grid-template-columns:1fr 360px;gap:60px;margin-top:34px;align-items:start}
   .dl .pas{gap:20px}
@@ -503,13 +504,14 @@ Image du vocabulaire de Baptiste : le chef est toujours au restaurant (inférenc
     </div>
   </div>
   <div class="grid g2 keys" style="margin-top:30px;gap:22px">
-    <div class="card top-b" style="padding:20px 26px"><div class="tag">Clé ILaaS individuelle</div><p style="font-size:20px">Pour toute personne de l'enseignement supérieur : on se connecte, on génère sa clé.</p><div class="go"><a class="ext" href="https://www.ilaas.fr/demande-de-cles-individuelles-ilaas-esr/" target="_blank" rel="noopener">ilaas.fr · demander sa clé ↗</a></div></div>
-    <div class="card top-v" style="padding:20px 26px"><div class="tag">Clé Albert API</div><p style="font-size:20px">Connexion ProConnect, la clé est créée tout de suite dans la console.</p><div class="go"><a class="ext" href="https://albert.playground.etalab.gouv.fr/keys" target="_blank" rel="noopener">albert.playground.etalab.gouv.fr ↗</a></div></div>
+    <div class="card top-b" style="padding:20px 26px"><div class="tag">Clé ILaaS individuelle</div><p style="font-size:20px">Pour toute personne de l'enseignement supérieur : on se connecte, on génère sa clé.</p><div class="go"><a class="ext" href="https://www.ilaas.fr/demande-de-cles-individuelles-ilaas-esr/" target="_blank" rel="noopener">ilaas.fr · demander sa clé ↗</a><span class="sl">is.gd/cleilaas</span></div></div>
+    <div class="card top-v" style="padding:20px 26px"><div class="tag">Clé Albert API</div><p style="font-size:20px">Connexion ProConnect, la clé est créée tout de suite dans la console.</p><div class="go"><a class="ext" href="https://albert.playground.etalab.gouv.fr/keys" target="_blank" rel="noopener">albert.playground.etalab.gouv.fr ↗</a><span class="sl">is.gd/clealbert</span></div></div>
   </div>
   <div class="foot"><span>26 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>Tangente 2026 · IA souveraine et IA locale</span></div>
   <aside class="notes">3 min. Montrer en direct UN des deux parcours (décision du 24/11 : les deux services présentés, la démonstration ne porte que sur l'un). Ouvrir la page avant le partage d'écran si la clé risque d'apparaître.
 ILaaS : d'après Baptiste, pas de plafond de tokens. Albert : création immédiate depuis la console.
-La clé, c'est la carte d'accès au restaurant : avec elle, on choisit librement le logiciel. Ne jamais l'afficher à l'écran.</aside>
+La clé, c'est la carte d'accès au restaurant : avec elle, on choisit librement le logiciel. Ne jamais l'afficher à l'écran.
+Liens courts à coller dans la discussion : is.gd/cleilaas (ILaaS) et is.gd/clealbert (Albert).</aside>
 </section>
 
 <!-- 12 · Kiro -->
@@ -742,13 +744,13 @@ Puis pratique guidée (15 h 30 - 15 h 55) : contenu non tranché au 24/11. Ma pr
   <div class="kicker">Pratique guidée · 10 minutes</div>
   <h2>À vous : <em>votre première clé</em></h2>
   <div class="grid g3 keys">
-    <div class="card top-b"><div class="ico">🔑</div><h3>Clé ILaaS</h3><p>Enseignement supérieur et recherche. Connexion, puis « générer ».</p><div class="url">ilaas.fr</div><div class="go"><a class="ext" href="https://www.ilaas.fr/demande-de-cles-individuelles-ilaas-esr/" target="_blank" rel="noopener">Demander sa clé ↗</a></div></div>
-    <div class="card top-v"><div class="ico">🗝️</div><h3>Clé Albert API</h3><p>L'API de l'État. Connexion ProConnect, clé immédiate.</p><div class="url">albert.playground.etalab.gouv.fr</div><div class="go"><a class="ext" href="https://albert.playground.etalab.gouv.fr/keys" target="_blank" rel="noopener">Créer sa clé ↗</a></div></div>
+    <div class="card top-b"><div class="ico">🔑</div><h3>Clé ILaaS</h3><p>Enseignement supérieur et recherche. Connexion, puis « générer ».</p><div class="url">ilaas.fr</div><div><span class="sl" style="margin:12px 0 0">is.gd/cleilaas</span></div><div class="go"><a class="ext" href="https://www.ilaas.fr/demande-de-cles-individuelles-ilaas-esr/" target="_blank" rel="noopener">Demander sa clé ↗</a></div></div>
+    <div class="card top-v"><div class="ico">🗝️</div><h3>Clé Albert API</h3><p>L'API de l'État. Connexion ProConnect, clé immédiate.</p><div class="url">albert.playground.etalab.gouv.fr</div><div><span class="sl" style="margin:12px 0 0">is.gd/clealbert</span></div><div class="go"><a class="ext" href="https://albert.playground.etalab.gouv.fr/keys" target="_blank" rel="noopener">Créer sa clé ↗</a></div></div>
     <div class="card top-b"><div class="ico">💬</div><h3>Sans clé : RAGaRenn</h3><p>Pour converser tout de suite, avec son compte d'établissement.</p><div class="url">sso-chat.ragarenn.univ-rennes.fr</div><div class="go"><a class="ext" href="https://sso-chat.ragarenn.univ-rennes.fr/" target="_blank" rel="noopener">Se connecter ↗</a></div></div>
   </div>
   <div class="callout sm">Votre clé est <b>personnelle</b> : ne la collez jamais dans un chat, un mail ou un document partagé.</div>
   <div class="foot"><span>26 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>Tangente 2026 · IA souveraine et IA locale</span></div>
-  <aside class="notes">Si la pratique « clé » est retenue avec Baptiste. Coller les trois liens dans la discussion de la visio.
+  <aside class="notes">Si la pratique « clé » est retenue avec Baptiste. Coller les liens dans la discussion de la visio : is.gd/cleilaas, is.gd/clealbert et sso-chat.ragarenn.univ-rennes.fr.
 Vérifier avant avec Lucie JACQUET-MALO que le circuit des clés présenté ne contredit pas la position de la DSI de la DG.
 Kiro : ne pas promettre qu'une clé ILaaS individuelle marche dedans (CORS). Pour les plus à l'aise, AnythingLLM accepte une clé individuelle.</aside>
 </section>
