@@ -1,6 +1,6 @@
 # Support de Julien · atelier « IA souveraine et IA locale » (Tangente 2026)
 
-Diaporama web (25 slides) de Julien MORICE pour ses passages dans l'atelier coanimé avec Baptiste GAULTIER (IMT Atlantique), jeudi 26/11/2026, 14 h - 16 h, à distance. Créé le 25/11/2026, sur le moteur de la présentation IRFASE (`EXED/FormationIRFASE/presentation/`). Le support commun reste le Keynote de Baptiste (`../Support_Baptiste/`) : ce diaporama ne couvre que les niveaux de Julien, avec des slides bleues « À toi, Baptiste » pour passer le partage d'écran.
+Diaporama web (26 slides) de Julien MORICE pour ses passages dans l'atelier coanimé avec Baptiste GAULTIER (IMT Atlantique), jeudi 26/11/2026, 14 h - 16 h, à distance. Créé le 25/11/2026, sur le moteur de la présentation IRFASE (`EXED/FormationIRFASE/presentation/`). Le support commun reste le Keynote de Baptiste (`../Support_Baptiste/`) : ce diaporama ne couvre que les niveaux de Julien, avec des slides bleues « À toi, Baptiste » pour passer le partage d'écran.
 
 Répartition suivie : CR du 24/11/2026 (`../2026-11-24_CR_Preparation_Atelier_IA_Souveraine_Locale.docx`) et demande de Julien du 25/11.
 
@@ -27,21 +27,23 @@ Mise à jour : `git add -A && git commit -m "…"`, puis `gh auth switch -u prac
 | 1-2 | Titre, carte des quatre niveaux (facultative) | Julien | pendant l'ouverture de Baptiste |
 | 3-8 | **Niveau 1 · Modèles frontière** : usages, harnais, une vidéo, une en réserve, la limite | Julien | 14 h 25 - 14 h 35 |
 | 9 | Relais : PIAG, puis niveau 2 | Baptiste | 14 h 35 - 15 h 00 |
-| 10-17 | **Niveau 3 · Logiciel chez moi, calcul à distance** : clés ILaaS et Albert, Kiro et son téléchargement, Open WebUI (chat.imt-bs.eu ou RAGaRenn), Whisper et son installation, tableau comparatif | Julien | 15 h 00 - 15 h 15 |
-| 18 | Relais : OpenCode et Mistral Vibe | Baptiste | 15 h 15 - 15 h 20 |
-| 19-21 | **Niveau 4 · Tout local** : LM Studio, Kiro branché sur LM Studio | Julien | 15 h 20 - 15 h 25 |
-| 22 | Relais : agent vocal local | Baptiste | 15 h 25 - 15 h 30 |
-| 23-25 | Pratique (récupérer sa clé), trois idées, contact | ensemble | 15 h 30 - 16 h 00 |
+| 10-18 | **Niveau 3 · Logiciel chez moi, calcul à distance** : clés ILaaS et Albert, Kiro et son téléchargement, AnythingLLM, Open WebUI (chat.imt-bs.eu ou RAGaRenn), Whisper et son installation, tableau comparatif | Julien | 15 h 00 - 15 h 15 |
+| 19 | Relais : OpenCode et Mistral Vibe | Baptiste | 15 h 15 - 15 h 20 |
+| 20-22 | **Niveau 4 · Tout local** : LM Studio, Kiro branché sur LM Studio | Julien | 15 h 20 - 15 h 25 |
+| 23 | Relais : agent vocal local | Baptiste | 15 h 25 - 15 h 30 |
+| 24-26 | Pratique (récupérer sa clé), trois idées, contact | ensemble | 15 h 30 - 16 h 00 |
 
-La slide RAGaRenn a été retirée le 26/11/2026 à la demande de Julien : RAGaRenn est présenté avec chat.imt-bs.eu sur la slide 14, la vidéo Open WebUI montrant les deux.
+La slide 14 « AnythingLLM » (application de bureau, lien de téléchargement anythingllm.com) a été ajoutée le 26/11/2026 avec la vidéo de Julien.
 
-La slide 16 « Comment je l'ai installé » (ajoutée le 26/11/2026, facultative) explique la fabrication du Transcripteur : schéma navigateur, Python, Whisper, fichiers, et quatre étapes tirées de `ApplicationsPerso/Transcripteur/README.md`.
+La slide RAGaRenn a été retirée le 26/11/2026 à la demande de Julien : RAGaRenn est présenté avec chat.imt-bs.eu sur la slide 15, la vidéo Open WebUI montrant les deux.
+
+La slide 17 « Comment je l'ai installé » (ajoutée le 26/11/2026, facultative) explique la fabrication du Transcripteur : schéma navigateur, Python, Whisper, fichiers, et quatre étapes tirées de `ApplicationsPerso/Transcripteur/README.md`.
 
 Whisper (Transcripteur) est placé à la fin du niveau 3, comme demandé, mais présenté comme un « avant-goût du niveau 4 » : le calcul reste sur le poste.
 
 ## Liens courts
 
-Créés le 26/11/2026 sur is.gd, affichés sur les slides 11 et 23 et à coller dans la discussion : https://is.gd/cleilaas (demande de clé ILaaS individuelle) et https://is.gd/clealbert (console des clés Albert API). Kiro : https://shorturl.at/rNscz (slide 13).
+Créés le 26/11/2026 sur is.gd, affichés sur les slides 11 et 24 et à coller dans la discussion : https://is.gd/cleilaas (demande de clé ILaaS individuelle) et https://is.gd/clealbert (console des clés Albert API). Kiro : https://shorturl.at/rNscz (slide 13).
 
 ## Vidéos
 
@@ -54,10 +56,11 @@ Toutes déclarées dans le bloc `window.VIDEOS` en tête de `index.html`.
 | `contexte` | 6 | Context engineering avec Claude Code (2 min 48, v126d68cf57ef0dhuepk) | Prête, copie locale |
 | `compterendu` | 7 (réserve) | Le compte rendu avec un harnais (3 min 51, v126d5d121f03i66a3ar) | Prête, copie locale. Montre un vrai CR interne avec des noms |
 | `kiro` | 12 | Kiro : discuter avec ILaaS, Albert et OpenRouter dans le navigateur (2 min 35, muette, v126d693980c1qh416c2, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Kiro_ILaaS.mp4` ; clés masquées à l'écran |
-| `openwebui` | 14 | Open WebUI : chat.imt-bs.eu et RAGaRenn (2 min 16, muette, v126d6939895abby5s5p, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Open_WebUI_IMTBS.mp4` ; montre l'identifiant CAS, pas le mot de passe |
-| `transcripteur` | 15 | Transcripteur : Whisper en local sur le Mac (44 s, v126d69398faa57otway, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Transcripteur_Whisper.mp4` ; montre une vraie réunion avec la scolarité (prénoms, environ 7 s de son), publiée ainsi à la demande de Julien |
-| `lmstudio` | 20 | LM Studio | **À enregistrer** : `assets/videos/LM_Studio.mp4` |
-| `kirolocal` | 21 | Kiro branché sur LM Studio | **À enregistrer** : `assets/videos/Kiro_LM_Studio.mp4` |
+| `anythingllm` | 14 | AnythingLLM : une application de bureau avec ILaaS et Albert (1 min 10, muette, v126d6939a5359x4kfhw, déposée le 26/11/2026) | Prête, copie locale `assets/videos/AnythingLLM.mp4` ; clé masquée, adresse du relais LiteLLM visible |
+| `openwebui` | 15 | Open WebUI : chat.imt-bs.eu et RAGaRenn (2 min 16, muette, v126d6939895abby5s5p, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Open_WebUI_IMTBS.mp4` ; montre l'identifiant CAS, pas le mot de passe |
+| `transcripteur` | 16 | Transcripteur : Whisper en local sur le Mac (44 s, v126d69398faa57otway, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Transcripteur_Whisper.mp4` ; montre une vraie réunion avec la scolarité (prénoms, environ 7 s de son), publiée ainsi à la demande de Julien |
+| `lmstudio` | 21 | LM Studio | **À enregistrer** : `assets/videos/LM_Studio.mp4` |
+| `kirolocal` | 22 | Kiro branché sur LM Studio | **À enregistrer** : `assets/videos/Kiro_LM_Studio.mp4` |
 
 Pour une vidéo à enregistrer, il suffit de **déposer le fichier sous le nom indiqué** : la slide le lit aussitôt et affiche sa durée, sans toucher au code. Tant qu'il manque, la slide montre un cadre « Vidéo à enregistrer ». Après un dépôt sur le Médiaserveur, renseigner `permalien` dans le bloc pour avoir aussi le lecteur en ligne.
 
@@ -73,7 +76,7 @@ Les copies locales des trois vidéos prêtes viennent de `EXED/FormationIRFASE/p
 - [ ] Open WebUI : qui l'héberge et l'administre, ce qui est conservé côté serveur.
 - [ ] RAGaRenn : qui peut s'y connecter, quels modèles.
 - [ ] Transcripteur : le retester.
-- [ ] Pratique guidée : retenue ou non (slide 23), circuit des clés à caler avec Lucie JACQUET-MALO.
+- [ ] Pratique guidée : retenue ou non (slide 24), circuit des clés à caler avec Lucie JACQUET-MALO.
 
 ## Aperçu dans Claude Code
 
