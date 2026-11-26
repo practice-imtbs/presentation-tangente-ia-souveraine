@@ -49,7 +49,7 @@ Toutes déclarées dans le bloc `window.VIDEOS` en tête de `index.html`.
 |---|---|---|---|
 | `contexte` | 6 | Context engineering avec Claude Code (2 min 48, v126d68cf57ef0dhuepk) | Prête, copie locale |
 | `compterendu` | 7 (réserve) | Le compte rendu avec un harnais (3 min 51, v126d5d121f03i66a3ar) | Prête, copie locale. Montre un vrai CR interne avec des noms |
-| `kiro` | 12 | Kiro avec une clé ILaaS ou Albert | **À enregistrer** : `assets/videos/Kiro_ILaaS.mp4` |
+| `kiro` | 12 | Kiro : discuter avec ILaaS, Albert et OpenRouter dans le navigateur (2 min 35, muette, v126d693980c1qh416c2, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Kiro_ILaaS.mp4` ; clés masquées à l'écran |
 | `openwebui` | 14 | L'Open WebUI d'IMT-BS | **À enregistrer** : `assets/videos/Open_WebUI_IMTBS.mp4` |
 | `transcripteur` | 16 | Transcripteur (Whisper) | **À enregistrer** : `assets/videos/Transcripteur_Whisper.mp4` |
 | `lmstudio` | 20 | LM Studio | **À enregistrer** : `assets/videos/LM_Studio.mp4` |
