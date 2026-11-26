@@ -53,7 +53,7 @@ Toutes déclarées dans le bloc `window.VIDEOS` en tête de `index.html`.
 | `compterendu` | 7 (réserve) | Le compte rendu avec un harnais (3 min 51, v126d5d121f03i66a3ar) | Prête, copie locale. Montre un vrai CR interne avec des noms |
 | `kiro` | 12 | Kiro : discuter avec ILaaS, Albert et OpenRouter dans le navigateur (2 min 35, muette, v126d693980c1qh416c2, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Kiro_ILaaS.mp4` ; clés masquées à l'écran |
 | `openwebui` | 14 | Open WebUI : chat.imt-bs.eu et RAGaRenn (2 min 16, muette, v126d6939895abby5s5p, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Open_WebUI_IMTBS.mp4` ; montre l'identifiant CAS, pas le mot de passe |
-| `transcripteur` | 15 | Transcripteur (Whisper) | **À enregistrer** : `assets/videos/Transcripteur_Whisper.mp4` |
+| `transcripteur` | 15 | Transcripteur : Whisper en local sur le Mac (44 s, v126d69398faa57otway, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Transcripteur_Whisper.mp4` ; montre une vraie réunion avec la scolarité (prénoms, environ 7 s de son), publiée ainsi à la demande de Julien |
 | `lmstudio` | 19 | LM Studio | **À enregistrer** : `assets/videos/LM_Studio.mp4` |
 | `kirolocal` | 20 | Kiro branché sur LM Studio | **À enregistrer** : `assets/videos/Kiro_LM_Studio.mp4` |
 
