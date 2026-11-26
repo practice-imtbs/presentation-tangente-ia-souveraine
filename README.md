@@ -1,6 +1,6 @@
 # Support de Julien · atelier « IA souveraine et IA locale » (Tangente 2026)
 
-Diaporama web (26 slides) de Julien MORICE pour ses passages dans l'atelier coanimé avec Baptiste GAULTIER (IMT Atlantique), jeudi 26/11/2026, 14 h - 16 h, à distance. Créé le 25/11/2026, sur le moteur de la présentation IRFASE (`EXED/FormationIRFASE/presentation/`). Le support commun reste le Keynote de Baptiste (`../Support_Baptiste/`) : ce diaporama ne couvre que les niveaux de Julien, avec des slides bleues « À toi, Baptiste » pour passer le partage d'écran.
+Diaporama web (25 slides) de Julien MORICE pour ses passages dans l'atelier coanimé avec Baptiste GAULTIER (IMT Atlantique), jeudi 26/11/2026, 14 h - 16 h, à distance. Créé le 25/11/2026, sur le moteur de la présentation IRFASE (`EXED/FormationIRFASE/presentation/`). Le support commun reste le Keynote de Baptiste (`../Support_Baptiste/`) : ce diaporama ne couvre que les niveaux de Julien, avec des slides bleues « À toi, Baptiste » pour passer le partage d'écran.
 
 Répartition suivie : CR du 24/11/2026 (`../2026-11-24_CR_Preparation_Atelier_IA_Souveraine_Locale.docx`) et demande de Julien du 25/11.
 
@@ -8,7 +8,7 @@ Répartition suivie : CR du 24/11/2026 (`../2026-11-24_CR_Preparation_Atelier_IA
 
 Double-cliquer sur `index.html` (ou le servir en local).
 
-**En ligne depuis le 25/11/2026 (accord de Julien) :** https://practice-imtbs.github.io/presentation-tangente-ia-souveraine/ (dépôt public https://github.com/practice-imtbs/presentation-tangente-ia-souveraine, GitHub Pages sur `main`, racine ; le grand QR code de la dernière slide pointe vers cette adresse). Les vidéos ne partent pas sur GitHub (exclues par `.gitignore`) : en ligne, seules celles qui ont un permalien Médiaserveur se lisent ; les cinq vidéos à enregistrer n'y apparaîtront qu'une fois déposées sur le Médiaserveur et leur `permalien` renseigné. Attention : les notes de l'orateur sont dans le code de la page, donc lisibles en ligne.
+**En ligne depuis le 25/11/2026 (accord de Julien) :** https://practice-imtbs.github.io/presentation-tangente-ia-souveraine/ (dépôt public https://github.com/practice-imtbs/presentation-tangente-ia-souveraine, GitHub Pages sur `main`, racine ; le grand QR code de la dernière slide pointe vers cette adresse). Les vidéos ne partent pas sur GitHub (exclues par `.gitignore`) : en ligne, seules celles qui ont un permalien Médiaserveur se lisent ; depuis le 26/11/2026, toutes les vidéos du diaporama sont sur le Médiaserveur (chaîne Embed public) et se lisent en ligne. Attention : les notes de l'orateur sont dans le code de la page, donc lisibles en ligne.
 
 Mise à jour : `git add -A && git commit -m "…"`, puis `gh auth switch -u practice-imtbs && git push && gh auth switch -u julienmorice`. GitHub Pages republie en une minute environ.
 
@@ -29,9 +29,11 @@ Mise à jour : `git add -A && git commit -m "…"`, puis `gh auth switch -u prac
 | 9 | Relais : PIAG, puis niveau 2 | Baptiste | 14 h 35 - 15 h 00 |
 | 10-18 | **Niveau 3 · Logiciel chez moi, calcul à distance** : clés ILaaS et Albert, Kiro et son téléchargement, AnythingLLM, Open WebUI (chat.imt-bs.eu ou RAGaRenn), Whisper et son installation, tableau comparatif | Julien | 15 h 00 - 15 h 15 |
 | 19 | Relais : OpenCode et Mistral Vibe | Baptiste | 15 h 15 - 15 h 20 |
-| 20-22 | **Niveau 4 · Tout local** : LM Studio, Kiro branché sur LM Studio | Julien | 15 h 20 - 15 h 25 |
-| 23 | Relais : agent vocal local | Baptiste | 15 h 25 - 15 h 30 |
-| 24-26 | Pratique (récupérer sa clé), trois idées, contact | ensemble | 15 h 30 - 16 h 00 |
+| 20-21 | **Niveau 4 · Tout local** : LM Studio et Kiro branché sur LM Studio (une seule slide) | Julien | 15 h 20 - 15 h 25 |
+| 22 | Relais : agent vocal local | Baptiste | 15 h 25 - 15 h 30 |
+| 23-25 | Pratique (récupérer sa clé), trois idées, contact | ensemble | 15 h 30 - 16 h 00 |
+
+Les slides « LM Studio » et « Kiro branché sur LM Studio » ont été réunies le 26/11/2026 en une seule (slide 21), Julien ayant fait une seule vidéo pour les deux.
 
 La slide 14 « AnythingLLM » (application de bureau, lien de téléchargement anythingllm.com) a été ajoutée le 26/11/2026 avec la vidéo de Julien.
 
@@ -43,7 +45,7 @@ Whisper (Transcripteur) est placé à la fin du niveau 3, comme demandé, mais p
 
 ## Liens courts
 
-Créés le 26/11/2026 sur is.gd, affichés sur les slides 11 et 24 et à coller dans la discussion : https://is.gd/cleilaas (demande de clé ILaaS individuelle) et https://is.gd/clealbert (console des clés Albert API). Kiro : https://shorturl.at/rNscz (slide 13).
+Créés le 26/11/2026 sur is.gd, affichés sur les slides 11 et 23 et à coller dans la discussion : https://is.gd/cleilaas (demande de clé ILaaS individuelle) et https://is.gd/clealbert (console des clés Albert API). Kiro : https://shorturl.at/rNscz (slide 13).
 
 ## Vidéos
 
@@ -59,8 +61,7 @@ Toutes déclarées dans le bloc `window.VIDEOS` en tête de `index.html`.
 | `anythingllm` | 14 | AnythingLLM : une application de bureau avec ILaaS et Albert (1 min 10, muette, v126d6939a5359x4kfhw, déposée le 26/11/2026) | Prête, copie locale `assets/videos/AnythingLLM.mp4` ; clé masquée, adresse du relais LiteLLM visible |
 | `openwebui` | 15 | Open WebUI : chat.imt-bs.eu et RAGaRenn (2 min 16, muette, v126d6939895abby5s5p, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Open_WebUI_IMTBS.mp4` ; montre l'identifiant CAS, pas le mot de passe |
 | `transcripteur` | 16 | Transcripteur : Whisper en local sur le Mac (44 s, v126d69398faa57otway, déposée le 26/11/2026) | Prête, copie locale `assets/videos/Transcripteur_Whisper.mp4` ; montre une vraie réunion avec la scolarité (prénoms, environ 7 s de son), publiée ainsi à la demande de Julien |
-| `lmstudio` | 21 | LM Studio | **À enregistrer** : `assets/videos/LM_Studio.mp4` |
-| `kirolocal` | 22 | Kiro branché sur LM Studio | **À enregistrer** : `assets/videos/Kiro_LM_Studio.mp4` |
+| `lmstudio` | 21 | LM Studio et Kiro : un modèle qui tourne sur le Mac (2 min 38, muette, v126d6939ab5b93bos5l, déposée le 26/11/2026) | Prête, copie locale `assets/videos/LM_Studio_Kiro.mp4` ; une seule vidéo pour LM Studio puis Kiro branché dessus |
 
 Pour une vidéo à enregistrer, il suffit de **déposer le fichier sous le nom indiqué** : la slide le lit aussitôt et affiche sa durée, sans toucher au code. Tant qu'il manque, la slide montre un cadre « Vidéo à enregistrer ». Après un dépôt sur le Médiaserveur, renseigner `permalien` dans le bloc pour avoir aussi le lecteur en ligne.
 
@@ -71,12 +72,12 @@ Les copies locales des trois vidéos prêtes viennent de `EXED/FormationIRFASE/p
 - [ ] Horaires de passage avec Baptiste (slides de relais et notes).
 - [ ] Kiro : une vraie conversation avec la clé `kiro_Julien` ; accord de Renaud Dékode pour la v4.
 - [x] Téléchargement de Kiro (slide 13, ajoutée le 26/11/2026) : archive sur FileSender (https://filesender.renater.fr/?s=download&token=eca63dca-9a9b-48d1-b18c-6b4cb0e65e8e, expire le 11/12/2026), lien court https://shorturl.at/rNscz, QR code `assets/img/qr_kiro.png` vers FileSender. Au-delà du 11/12, redéposer l'archive et refaire le QR code.
-- [ ] Kiro + LM Studio : jamais essayé avec la version ILaaS. Dans LM Studio, démarrer le serveur local et cocher « Enable CORS » ; dans Kiro, Configuration › API et Modèles › LM Studio, `http://localhost:1234`, « Mettre à jour ».
-- [ ] LM Studio : modèle montré (Gemma 4 12B est installé ; le CR parle de Gemma 4 4B sur un Mac de 8 Go).
+- [x] Kiro + LM Studio : essayé par Julien le 26/11/2026 (vidéo de la slide 21), avec `http://127.0.0.1:1234` et « Enable CORS ». Pour mémoire : Dans LM Studio, démarrer le serveur local et cocher « Enable CORS » ; dans Kiro, Configuration › API et Modèles › LM Studio, `http://localhost:1234`, « Mettre à jour ».
+- [x] LM Studio : modèle montré, Gemma 4 12B (7,6 Go).
 - [ ] Open WebUI : qui l'héberge et l'administre, ce qui est conservé côté serveur.
 - [ ] RAGaRenn : qui peut s'y connecter, quels modèles.
 - [ ] Transcripteur : le retester.
-- [ ] Pratique guidée : retenue ou non (slide 24), circuit des clés à caler avec Lucie JACQUET-MALO.
+- [ ] Pratique guidée : retenue ou non (slide 23), circuit des clés à caler avec Lucie JACQUET-MALO.
 
 ## Aperçu dans Claude Code
 

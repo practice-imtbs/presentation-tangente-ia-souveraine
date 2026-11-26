@@ -52,14 +52,11 @@ window.VIDEOS = {
     local: "assets/videos/Transcripteur_Whisper.mp4",
     duree: "0 min 44"
   },
-  /* ---- à enregistrer : déposer le fichier sous ce nom dans assets/videos/ ---- */
   lmstudio: {
-    titre: "LM Studio : un modèle qui tourne sur le Mac",
-    permalien: "", local: "assets/videos/LM_Studio.mp4", duree: ""
-  },
-  kirolocal: {
-    titre: "Kiro branché sur LM Studio",
-    permalien: "", local: "assets/videos/Kiro_LM_Studio.mp4", duree: ""
+    titre: "LM Studio et Kiro : un modèle qui tourne sur le Mac",
+    permalien: "https://mediaserver.ip-paris.fr/permalink/v126d6939ab5b93bos5l/",
+    local: "assets/videos/LM_Studio_Kiro.mp4",
+    duree: "2 min 38"
   }
 };
 </script>
@@ -718,52 +715,33 @@ Retour vers 15 h 20.</aside>
 Dire franchement : je n'en ai pas d'usage régulier ; je le montre pour ce que cela annonce. Ce niveau intéresse surtout les plus techniques.</aside>
 </section>
 
-<!-- 21 · LM Studio -->
-<section class="slide" data-t="LM Studio, un modèle sur le Mac" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
-  <div class="kicker">Niveau 4 · LM Studio <span class="live">Démo en direct</span></div>
-  <h2>Un modèle, <em>sur mon Mac</em></h2>
-  <div class="video-wrap etapes">
+<!-- 21 · LM Studio et Kiro -->
+<section class="slide" data-t="LM Studio et Kiro, un modèle sur le Mac" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
+  <div class="kicker">Niveau 4 · LM Studio, puis le même Kiro <span class="live">Démo en direct</span></div>
+  <h2>Un modèle <em>sur mon Mac</em>, dans Kiro</h2>
+  <div class="video-wrap etapes compact">
     <div class="vid" data-video="lmstudio"></div>
     <div class="vside">
       <ol class="pas">
-        <li><span class="t">1</span><div><b>Choisir un modèle ouvert</b><span>Dans le catalogue : Gemma, Qwen, Mistral…</span></div></li>
-        <li><span class="t">2</span><div><b>Le télécharger une fois</b><span>Quelques gigaoctets, comme une application.</span></div></li>
-        <li><span class="t">3</span><div><b>Converser, wifi coupé</b><span>La preuve que rien ne sort.</span></div></li>
+        <li><span class="t">1</span><div><b>Installer LM Studio</b><span>Gratuit, sur lmstudio.ai, pour Mac, Windows et Linux.</span></div></li>
+        <li><span class="t">2</span><div><b>Télécharger un modèle ouvert, une fois</b><span>Ici Gemma 4 12B, 7,6 Go. Plus le modèle est gros, plus il faut de mémoire.</span></div></li>
+        <li><span class="t">3</span><div><b>Converser dans LM Studio</b><span>Le calcul se fait sur le Mac : rien ne sort.</span></div></li>
+        <li><span class="t">4</span><div><b>Ouvrir le serveur local</b><span>Onglet Développeur : serveur démarré, <code>Enable CORS</code> coché.</span></div></li>
+        <li><span class="t">5</span><div><b>Kiro › LM Studio</b><span>Coller <code>http://127.0.0.1:1234</code>, « Mettre à jour » : le modèle local rejoint ceux d'ILaaS.</span></div></li>
       </ol>
-      <p style="font-size:19px">Ordre de grandeur : plus le modèle est gros, plus il faut de mémoire. <b>Un petit modèle tient sur un portable récent</b> ; les plus gros demandent une machine dédiée.</p>
-      <div class="links"></div>
-    </div>
-  </div>
-  <div class="foot"><span>26 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>Tangente 2026 · IA souveraine et IA locale</span></div>
-  <aside class="notes">2 min 30. Modèle installé sur le Mac : Gemma 4 12B (seul modèle local conservé, d'après le README du Transcripteur). Le CR du 24/11 parle de Gemma 4 en version 4B sur un Mac M3 de 8 Go : choisir lequel montrer, et le dire.
-Geste fort : couper le wifi à l'écran, puis poser la question. Le rallumer aussitôt après (on est en visio !). Plus prudent : le faire dans la vidéo enregistrée, pas en direct.
-Vidéo à enregistrer : assets/videos/LM_Studio.mp4.</aside>
-</section>
-
-<!-- 22 · Kiro + LM Studio -->
-<section class="slide" data-t="Le même Kiro, branché sur mon Mac" data-seq="Niveau 4 · Tout local" data-debut="15:20" data-fin="15:25" data-m="4">
-  <div class="kicker">Niveau 4 · le même logiciel, un autre moteur <span class="live">Démo en direct</span></div>
-  <h2>Le même Kiro, <em>branché sur mon Mac</em></h2>
-  <div class="video-wrap etapes compact">
-    <div class="vid" data-video="kirolocal"></div>
-    <div class="vside">
-      <ol class="pas">
-        <li><span class="t">1</span><div><b>LM Studio : le serveur local</b><span>Onglet Développeur, démarrer le serveur, cocher <code>Enable CORS</code>.</span></div></li>
-        <li><span class="t">2</span><div><b>Kiro : l'adresse du serveur</b><span>Configuration › API et Modèles › LM Studio : <code>http://localhost:1234</code>, puis « Mettre à jour ».</span></div></li>
-        <li><span class="t">3</span><div><b>Choisir le modèle local</b><span>Il apparaît dans le sélecteur, à côté des modèles ILaaS.</span></div></li>
-      </ol>
-      <div class="links"></div>
+      <div class="links"><a class="ext" href="https://lmstudio.ai/" target="_blank" rel="noopener">lmstudio.ai ↗</a></div>
     </div>
   </div>
   <div class="callout v sm">Même logiciel qu'au niveau 3 : <b>on ne change que l'endroit où tourne le modèle</b>. Le harnais reste, le moteur change.</div>
   <div class="foot"><span>26 novembre 2026</span><span class="sep"></span><span class="num" data-n></span><span class="sep"></span><span>Tangente 2026 · IA souveraine et IA locale</span></div>
-  <aside class="notes">2 min 30. Fin du passage : 15 h 25.
-Kiro v4 gère nativement LM Studio et Ollama (FAQ de Kiro : « Configuration › API et Modèles », bouton « Mettre à jour »). Si les modèles n'apparaissent pas, c'est presque toujours le CORS non activé dans LM Studio.
+  <aside class="notes">5 min, fin du passage : 15 h 25. Slide qui réunit LM Studio et Kiro branché sur LM Studio (une seule vidéo de Julien, 26/11/2026).
+Vidéo (2 min 38, muette, Médiaserveur v126d6939ab5b93bos5l) : le site lmstudio.ai et sa présentation, LM Studio sur le Mac, Gemma 4 12B installé (7,6 Go), une poésie sur IMT-BS écrite dans LM Studio ; puis l'onglet Développeur (serveur local sur http://127.0.0.1:1234, Enable CORS), l'adresse recopiée dans Kiro (onglet LM Studio, « Mettre à jour »), Gemma 4 choisi dans Kiro, la même poésie puis sa traduction en anglais.
+Si les modèles n'apparaissent pas dans Kiro, c'est presque toujours le CORS non activé dans LM Studio. Kiro v4 gère aussi Ollama.
 Le message de tout l'atelier tient dans cette slide : le harnais (Kiro, mes prompts, mes conversations) ne bouge pas ; on choisit le moteur selon la tâche et les données. Un même Kiro peut parler à un modèle frontière (niveau 1), à ILaaS (niveau 3) et à LM Studio (niveau 4).
-À tester avant : non vérifié à ce jour avec la version ILaaS de Kiro. Vidéo à enregistrer : assets/videos/Kiro_LM_Studio.mp4.</aside>
+Dire franchement : je n'en ai pas d'usage régulier ; un petit modèle tient sur un portable récent, les plus gros demandent une machine dédiée. Le CR du 24/11 parlait de Gemma 4 4B pour un Mac de 8 Go.</aside>
 </section>
 
-<!-- 23 · Relais Baptiste : agent vocal -->
+<!-- 22 · Relais Baptiste : agent vocal -->
 <section class="slide s-relay" data-t="À toi, Baptiste · agent vocal local" data-seq="Relais · Baptiste" data-debut="15:25" data-fin="15:30" data-m="0">
   <div class="kicker">Relais · 15 h 25</div>
   <h2>À toi, <em>Baptiste</em></h2>
@@ -777,7 +755,7 @@ Puis pratique guidée (15 h 30 - 15 h 55) : contenu non tranché au 24/11. Ma pr
 
 <!-- ===================== PRATIQUE ET CLÔTURE ===================== -->
 
-<!-- 24 · Pratique -->
+<!-- 23 · Pratique -->
 <section class="slide" data-t="Pratique · à vous de jouer" data-seq="Pratique guidée" data-debut="15:30" data-fin="15:55" data-m="0">
   <div class="kicker">Pratique guidée · 10 minutes</div>
   <h2>À vous : <em>votre première clé</em></h2>
@@ -793,7 +771,7 @@ Vérifier avant avec Lucie JACQUET-MALO que le circuit des clés présenté ne c
 Kiro : ne pas promettre qu'une clé ILaaS individuelle marche dedans (CORS). Pour les plus à l'aise, AnythingLLM accepte une clé individuelle.</aside>
 </section>
 
-<!-- 25 · Ce que je retiens -->
+<!-- 24 · Ce que je retiens -->
 <section class="slide" data-t="Trois idées à emporter" data-seq="Clôture" data-debut="15:55" data-fin="16:00" data-m="0">
   <div class="kicker">Clôture</div>
   <h2>Trois idées <em>à emporter</em></h2>
@@ -807,7 +785,7 @@ Kiro : ne pas promettre qu'une clé ILaaS individuelle marche dedans (CORS). Pou
 Annonce possible (à valider avec Baptiste et Lucie) : une suite en quatre webinaires, un par niveau, de janvier à avril 2027.</aside>
 </section>
 
-<!-- 26 · Merci -->
+<!-- 25 · Merci -->
 <section class="slide s-end" data-t="Merci · contact" data-seq="Clôture" data-debut="15:55" data-fin="16:00" data-m="0">
   <div>
     <div class="kicker">Merci</div>
